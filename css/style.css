@@ -215,12 +215,14 @@ gap: 40px;
 }
 
 .socials-icon{
-  border-radius: 50%;
-  background-color: #4D5AE5;
-  width: 16px;
-  height: 16px
+  
+  
 }
+.social-link:hover,
+.social-link:focus{
+background: #404BBF;
 
+}
 .social-list{
     display: flex;
     justify-content: center;
@@ -230,14 +232,16 @@ gap: 40px;
 }
 
 .social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  
+  border-radius: 50%;
+  background-color: #4D5AE5;
 }
 
-.social-item{
-  
-}
+
 /*  We doing */
 .section-title {
   font-size: 36px;
@@ -286,6 +290,7 @@ gap: 40px;
   align-items: center;
   gap: 24px;
   
+  
 }
 .team-card{
   width: calc((100% - 3*24px)/4);
@@ -303,30 +308,28 @@ gap: 40px;
     text-align: center;
 }
 .customers{
-  padding: 120px;
+  padding: 120px 0;
 }
 .title-customers{
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
+  text-align: center;
   font-size: 36px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   
 }
-.customers-icon{
 
-}
 .customers-icon{
-  border: 1px solid #8E8F99;
-  border-radius: 4px; 
-  width: 168px;
-  height: 88px;
-  fill: currentColor; 
   
-}.customers-icon:hover{
-  background: var(--bcg-icon)
+  width: 104px;
+  height: 56px;
+  fill:#8E8F99;
+   
+}
+
+.customers-icon:hover,
+.customers-icon:focus{
+  background: #404BBF;
 }
 .customers-link{
   display: flex;
@@ -334,12 +337,16 @@ gap: 40px;
   justify-content: center;
   width: 100%;
   height: 100%;
+  border: 1px solid #8E8F99;
+  border-radius: 4px; 
+  width: 168px;
+  height: 88px;
  
 }
 .customers-link:hover,
 .customers:focus{
-
-  color: var(--bcg-cust);
+ border: 1px solid #404BBF;
+  
 }
 
 
@@ -362,24 +369,22 @@ gap: 40px;
   
 }
 
-.social-link{
+.footer-social-link{
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  
+  background: rgba(255, 255, 255, 0.1);
 }
-
 .social-text{
   display: flex;
   justify-content: center;
   padding-bottom: 16px;
   color: var(--bcr-clr);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -400,12 +405,17 @@ gap: 40px;
 
 .footer {
     background: var(--bgr);
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
    
 }
-
+.media-item{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+ 
+}
 .footer-social{
-  display: block;
   margin-left: 120px;
 }
 
@@ -417,13 +427,12 @@ gap: 40px;
 
 .media-container{
   display: flex;
-padding-top: 100px;
-padding-bottom: 100px;
+
 }
 
-.footer-socials-icon:hover{
+.footer-social-link:hover{
 background: #31D0AA;
-border-radius: 50%;
+
 }
 
 .nav-link:hover,

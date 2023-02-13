@@ -23,7 +23,6 @@ body{
 
 .header{
  border-bottom: 1px solid #E7E9FC;
- /* max-width:1150px ; */
 padding-left: 15px;
 padding-right: 15px;
 margin: auto;
@@ -142,7 +141,7 @@ border-radius: 4px;
     margin-bottom: 72px;
 }
 
-.cart.tumb{
+.card-tumb{
     background: #FFFFFF;
     padding: 32px 16px;
     
@@ -152,20 +151,22 @@ border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
     gap:48px 24px; 
-    
    
 }
+
+
 .portfolio-link{
     display: block;
 
 }
-.portfolio-link:hover{
+
+.portfolio-link:hover,
+.portfolio-link:focus{
    background: #F4F4FD;
-}
-.card-tumb{
-   padding: 32px 16px;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
 
 .img-list{
      width: calc((100% - 2*24px)/3);
@@ -176,18 +177,18 @@ border-radius: 4px;
 
 .sub-title{
     
-    font-weight: 500;
+font-weight: 500;
 font-size: 20px;
 line-height: 1.5;
 margin: 0;
-
+color: #2E2F42;
 }
 
 .section-text{
 margin: 0;
 line-height: 1.5;
 margin-top: 8px;
-
+color: #434455;
 }
 
 
@@ -212,21 +213,31 @@ color: var(--body);
 display: flex;
 justify-content: center;
 font-weight: 500;
-font-size: 16px;
-line-height: 1.5px;
+line-height: 1.5;
 letter-spacing: 0.02em;
 margin-left: 269px;
 padding-bottom: 16px;
 }
+
 .social-link{
     display: flex;
-    align-items: center;
     justify-content: center;
-    
-     border-radius: 50%;
-     
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.socials-icon{
+  width: 24px;
+  height: 24px;
+
+
   
 }
+
+
 .footer-text{
 display: block;
 line-height: 1.5;
@@ -236,27 +247,17 @@ width: 264px;
 margin-bottom: 0;
 
 }
-.card-img{
-    
-}
-.cerd-set{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
+
 .portfolio-link:hover{
-   
-}
-.socials-icon{
-width: 40px;
-height: 40px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .media-container{
   display: flex;
   
        
 }
-.socials-icon:hover{
+.social-link:hover{
  
 background: #31D0AA;
 }
@@ -267,8 +268,10 @@ background: #31D0AA;
 
 .btn:hover,
 .btn:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: #404BBF;
     color: var(--body);
+    
 }
 
 
