@@ -319,17 +319,12 @@ background: #404BBF;
   
 }
 
-.customers-icon{
-  
-  width: 104px;
-  height: 56px;
-  fill:#8E8F99;
-   
-}
-
 .customers-icon:hover,
 .customers-icon:focus{
-  background: #404BBF;
+ 
+  fill: #31D0AA;
+  
+  
 }
 .customers-link{
   display: flex;
@@ -341,7 +336,12 @@ background: #404BBF;
   border-radius: 4px; 
   width: 168px;
   height: 88px;
+
  
+}
+
+.customers-icon{
+  fill:  #8E8F99;
 }
 .customers-link:hover,
 .customers:focus{
