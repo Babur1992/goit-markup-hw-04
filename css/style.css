@@ -13,6 +13,8 @@
   --bck-img: #F4F4FD;
   --bcg-cust:#AFB1B8;
   --bcg-icon:#404BBF;
+  --cst-icon:#8E8F99;
+  --fot-soc-link: #31D0AA;
 }
 
 
@@ -134,7 +136,7 @@ gap: 40px;
 
 .hero-title {
   font-size: 56px;
-  line-height: 1.5;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--bcr-clr); 
@@ -162,8 +164,6 @@ gap: 40px;
  /* function-text */
 .sub-title {
   margin-top: 0;
-  margin-bottom: 8px;
-
   font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
@@ -209,19 +209,20 @@ gap: 40px;
   letter-spacing: 0.02em;
   color: var(--text);
   margin: 0;
-  width: 264px;
-  margin-bottom: 8px;
-  
+ 
 }
 
-.socials-icon{
-  
-  
+.item{
+  width: 264px;
 }
+.team-text{
+  margin-bottom: 8px;
+}
+  
+
 .social-link:hover,
 .social-link:focus{
-background: #404BBF;
-
+  background: var(--bcg-icon);
 }
 .social-list{
     display: flex;
@@ -238,7 +239,7 @@ background: #404BBF;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4D5AE5;
+  background-color: var(--background);
 }
 
 
@@ -316,16 +317,14 @@ background: #404BBF;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  
+  margin-top: 0;
 }
-
+ 
 .customers-icon:hover,
 .customers-icon:focus{
  
-  fill:#404BBF;
   
-  
-}
+} 
 .customers-link{
   display: flex;
   align-items: center;
@@ -334,19 +333,18 @@ background: #404BBF;
   height: 100%;
   border: 1px solid #8E8F99;
   border-radius: 4px; 
-  width: 168px;
-  height: 88px;
-
+  fill:var(--cst-icon);
  
 }
-
-.customers-icon{
-  fill:  #8E8F99;
+.customers-item{
+  width: 168px;
+  height: 88px;
 }
+
 .customers-link:hover,
 .customers:focus{
  border: 1px solid #404BBF;
-  
+ fill:var(--bcg-icon)
 }
 
 
@@ -379,13 +377,11 @@ background: #404BBF;
   background: rgba(255, 255, 255, 0.1);
 }
 .social-text{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 16px;
   color: var(--bcr-clr);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 0;
 }
 
 /* footer */
@@ -430,8 +426,9 @@ background: #404BBF;
 
 }
 
-.footer-social-link:hover{
-background: #31D0AA;
+.footer-social-link:hover,
+.footer-social-link:focus{
+background:var(--fot-soc-link);
 
 }
 
